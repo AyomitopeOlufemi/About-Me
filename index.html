@@ -3,58 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayomitope</title>
+  <title>Ayomitope Olufemi</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
+      background: linear-gradient(to right, #eef2f3, #dfe9f3);
       color: #333;
-      text-align: center;
+      text-align: left;
       padding: 50px;
     }
     h1 {
-      color: #2c3e50;
+      color: #000000;
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .intro img {
+      border-radius: 0px;
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-left: auto;
+    }
+    .intro img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .intro p {
+      color: #000000;
+      line-height: 1.2;
+      font-size: 3rem;
+      margin: 0;
+      flex: 1;
+      text-align: left;
+      text-transform: none;
+      font-weight: normal;
+    }
+    .intro p strong {
+      font-weight: bold;
+    }
+    .uppercase-name {
+      text-transform: uppercase;
+      font-weight: bold;
     }
     p {
-      color: #555;
-      max-width: 800px;
-      margin: 20px auto;
-      line-height: 1.6;
-    }
-    img {
-      margin-top: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      color: #000000;
+      line-height: 1.8;
+      font-size: 1.15rem;
     }
     a {
       color: #1a73e8;
       text-decoration: none;
       font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
     }
     a:hover {
-      text-decoration: underline;
+      border-color: #1a73e8;
+    }
+    .certifications {
+      display: flex;
+      justify-content: flex-start;
+      gap: 50px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .certifications div {
+      flex: 1;
+      min-width: 300px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    ul li {
+      background: white;
+      margin: 12px 0;
+      padding: 14px 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+      font-size: 1.05rem;
+      transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+    ul li:hover {
+      transform: translateX(8px);
+      background-color: #f7faff;
+    }
+    h2 {
+      color: #000000;
+      margin-top: 20px;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #1a73e8;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>About Me</h1>
-    <img src="profile.jpg" alt="Ayomitope's picture" width="300" />
-  
-  <p>Hello! My name is <strong><em>Ayomitope Olufemi</em></strong>, and this is my very first website. I'm learning something new every day as I build this.</p>
-  
+  <h1 class="uppercase-name">Ayomitope Olufemi</h1>
+
+  <div class="intro">
+    <p>I'm an Entry-Level <strong>Cloud Security Engineer</strong> & <strong>Cybersecurity Analyst.</strong></p>
+    <img src="profile.jpg" alt="Ayomitope's picture" />
+  </div>
+
   <p>My background was in History and International Studies, which I studied at the Federal University Oye Ekiti, Ekiti State. Transitioning from a non-tech background into the tech world has been both challenging and rewarding. This journey has fueled my determination to succeed and has shown me that with consistency, curiosity, and the right resources, anyone can break into tech and thrive.</p>
-  
-  <p>I have a strong passion for <strong>cloud security</strong> and have been actively researching and practicing with various cloud tools and services using <strong>Amazon Web Service (AWS)</strong>. My goal is to become a skilled cloud security engineer, and I'm excited about the learning journey ahead. Through continuous learning and hands-on experience, I hope to not only grow in my career but also support others who are navigating the world of <strong>cloud security</strong>. I'm committed to sharing my knowledge and helping build a safer and more secure cloud environment for everyone.</p>
 
-  <p><strong>Connect with me on</strong> <a href="https://www.linkedin.com/in/ayomitope-olufemi/" target="_blank">LinkedIn</a>.</p>
+  <p>I have a strong passion for <strong>cloud security</strong> and <strong>cybersecurity</strong>. Over time, I’ve been actively researching and practicing with various tools and services, especially within <strong>Amazon Web Services (AWS)</strong> and other platforms for cybersecurity. My goal is to become highly skilled as both a cloud security engineer and a cybersecurity professional. I’m excited about this learning journey because it allows me to combine technical knowledge with problem-solving skills to protect systems and data. Through continuous learning, hands-on projects, and collaboration, I aim not only to grow in my career but also to support others who are navigating the world of <strong>cloud security</strong> and <strong>cybersecurity</strong>. I’m committed to sharing my knowledge and helping build a safer and more secure digital environment for everyone.</p>
 
-  <p>Here are three certifications I’ve achieved:</p>
-  <ul style="text-align: left; display: inline-block;">
-    <li>IBM Cybersecurity Analyst Professional Certificate</li>
-    <li>Introduction to Cloud Computing - Coursera</li>
-    <li>AWS Cloud Practitioner Essentials</li>
-  </ul>
+  <p>
+    <a href="https://www.linkedin.com/in/ayomitope-olufemi/" target="_blank">LinkedIn</a> | 
+    <a href="https://github.com/AyomitopeOlufemi" target="_blank">GitHub</a> | 
+    <a href="https://drive.google.com/file/d/1s9kSe4Z_ItqT9jFYENCpjx22krnL_Tzm/view?usp=drive_link" target="_blank">CV</a>
+  </p>
 
+  <div class="certifications">
+    <div>
+      <h2>📂 Projects</h2>
+      <ul>
+        <li>Set up a PostgreSQL database for deploying Metabase on ECS.</li>
+        <li>Created and configured an S3 bucket for static website hosting.</li>
+        <li>Integrated CloudFront with S3 for content delivery and caching.</li>
+        <li>Managed custom domain and DNS records.</li>
+        <li>Requested and validated a wildcard SSL certificate in AWS Certificate Manager (ACM).</li>
+        <li>Built an event-driven pipeline: Used AWS Lambda to trigger on S3 events, sent logs to CloudWatch, and configured SNS notifications to receive email alerts.</li>
+        <li>Managed IAM roles, users, and permissions, and monitored resources with CloudWatch.</li>
+      </ul>
+
+      <h2>☁️ Cloud Security Certifications</h2>
+      <ul>
+        <li>Introduction to Cloud Computing - IBM</li>
+        <li>AWS Cloud Practitioner Essentials (Certification of Completion)</li>
+        <li>AWS Cloud Bootcamp - CSN</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>🔐 Cybersecurity Certifications</h2>
+      <ul>
+        <li>Google Cybersecurity Specialization - Google</li>
+        <li>Networking Basics - Cisco</li>
+        <li>Mastercard - Cybersecurity Job Simulation - Forage</li>
+        <li>Introduction to Cybersecurity - Cisco</li>
+        <li>Datacom - Cybersecurity Job Simulation - Forage</li>
+        <li>JPMorgan Chase & Co. - Cybersecurity Job Simulation - Forage</li>
+        <li>Certified in Cybersecurity - ISC2</li>
+        <li>Cyber Threat Management - Cisco</li>
+        <li>CyBlack x CISCO Cybersecurity Academy - CyBlack</li>
+        <li>Clifford Chance - Cyber Security Job Simulation - Forage</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Ayomitope Olufemi. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
-
