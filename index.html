@@ -8,9 +8,14 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #eef2f3, #dfe9f3);
+      margin: 0;
       color: #333;
-      text-align: left;
+    }
+    .container {
       padding: 50px;
+      text-align: left;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     h1 {
       color: #000000;
@@ -27,9 +32,10 @@
       max-width: 900px;
       margin: 0 auto;
       text-align: left;
+      flex-wrap: wrap;
     }
     .intro img {
-      border-radius: 20px; /* Curved edges */
+      border-radius: 20px;
       width: 230px;
       height: 230px;
       object-fit: cover;
@@ -48,7 +54,6 @@
       margin: 0;
       flex: 1;
       text-align: left;
-      text-transform: none;
       font-weight: normal;
     }
     .intro p strong {
@@ -75,13 +80,13 @@
     }
     .certifications {
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       gap: 50px;
       margin-top: 40px;
       flex-wrap: wrap;
       text-align: left;
     }
-    .certifications div {
+    .certifications > div {
       flex: 1;
       min-width: 300px;
     }
@@ -116,70 +121,72 @@
       margin-top: 60px;
       font-size: 0.9rem;
       color: #666;
-      text-align: center;
+      text-align: center; /* ensures center alignment */
     }
   </style>
 </head>
 <body>
-  <h1 class="uppercase-name">Ayomitope Olufemi</h1>
+  <div class="container">
+    <h1 class="uppercase-name">Ayomitope Olufemi</h1>
 
-  <div class="intro">
-    <p>I'm an Entry-Level <strong>Cloud Security Engineer</strong> & <strong>Cybersecurity Analyst.</strong></p>
-    <img src="profile.jpg" alt="Ayomitope's picture" />
-  </div>
-
-  <p>I hold a background in <strong>History and International Studies</strong> from the Federal University Oye-Ekiti, Ekiti State. Transitioning from a non-technical field into the world of technology has been both a challenging and rewarding experience. This journey has strengthened my determination to succeed and demonstrated that with consistency, curiosity, and access to the right resources, it is possible to successfully pivot into tech and build a thriving career.</p>
-
-  <p>I am deeply passionate about <strong>cloud security</strong> and <strong>cybersecurity</strong>, with a strong focus on gaining expertise in <strong>Amazon Web Services (AWS)</strong> and related technologies. Over time, I have actively engaged in research and hands-on practice with various tools and services, building a solid foundation in both domains. My goal is to advance as a <strong>Cloud Security Engineer</strong> and <strong>Cybersecurity Analyst</strong>, leveraging technical expertise and problem-solving skills to safeguard systems and data. I am committed to continuous learning, hands-on projects, and collaboration, which enable me to grow while contributing to a safer digital environment. Beyond personal development, I am dedicated to sharing knowledge and supporting others in their journey, with the broader mission of fostering a more resilient and secure digital world.</p>
-
-  <p>
-    <a href="https://www.linkedin.com/in/ayomitope-olufemi/" target="_blank">LinkedIn</a> | 
-    <a href="https://github.com/AyomitopeOlufemi" target="_blank">GitHub</a> | 
-    <a href="https://drive.google.com/file/d/1s9kSe4Z_ItqT9jFYENCpjx22krnL_Tzm/view?usp=drive_link" target="_blank">CV</a>
-  </p>
-
-  <div class="certifications">
-    <div>
-      <h2>📂 Projects</h2>
-      <ul>
-        <li>Deployed a secure PostgreSQL database on ECS with encryption and access controls for analytics data.</li>
-        <li>Configured an S3 bucket with SSE-KMS encryption, blocked public access, and enforced least-privilege policies.</li>
-        <li>Integrated CloudFront with S3 to enforce HTTPS, restrict direct bucket access, and improve content delivery.</li>
-        <li>Managed DNS records and custom domains to ensure secure and reliable routing.</li>
-        <li>Requested and validated a wildcard SSL certificate in ACM for encrypted communication across subdomains.</li>
-        <li>Built an event-driven pipeline with Lambda, CloudWatch, and SNS for real-time monitoring and security alerts.</li>
-        <li>Applied IAM best practices by enforcing least privilege and monitoring resources for compliance and anomalies.</li>
-      </ul>
-
-      <h2>☁️ Cloud Security Certifications</h2>
-      <ul>
-        <li>Introduction to Cloud Computing - IBM</li>
-        <li>AWS Cloud Practitioner Essentials (Certification of Completion)</li>
-        <li>AWS Cloud Bootcamp - CSN</li>
-      </ul>
+    <div class="intro">
+      <p>I'm an Entry-Level <strong>Cloud Security Engineer</strong> & <strong>Cybersecurity Analyst.</strong></p>
+      <img src="profile.jpg" alt="Ayomitope's picture" />
     </div>
 
-    <div>
-      <h2>🔐 Cybersecurity Certifications</h2>
-      <ul>
-        <li>Google Cybersecurity Specialization - Google</li>
-        <li>Networking Basics - Cisco</li>
-        <li>Mastercard - Cybersecurity Job Simulation - Forage</li>
-        <li>Introduction to Cybersecurity - Cisco</li>
-        <li>Datacom - Cybersecurity Job Simulation - Forage</li>
-        <li>JPMorgan Chase & Co. - Cybersecurity Job Simulation - Forage</li>
-        <li>Certified in Cybersecurity - ISC2</li>
-        <li>Cyber Threat Management - Cisco</li>
-        <li>CyBlack x CISCO Cybersecurity Academy - CyBlack</li>
-        <li>Clifford Chance - Cyber Security Job Simulation - Forage</li>
-      </ul>
-    </div>
-  </div>
+    <p>I hold a background in <strong>History and International Studies</strong> from the Federal University Oye-Ekiti, Ekiti State. Transitioning from a non-technical field into the world of technology has been both a challenging and rewarding experience. This journey has strengthened my determination to succeed and demonstrated that with consistency, curiosity, and access to the right resources, it is possible to successfully pivot into tech and build a thriving career.</p>
 
-  <footer>
-    <p>© 2025 Ayomitope Olufemi. All Rights Reserved.</p>
-  </footer>
+    <p>I am deeply passionate about <strong>cloud security</strong> and <strong>cybersecurity</strong>, with a strong focus on gaining expertise in <strong>Amazon Web Services (AWS)</strong> and related technologies. Over time, I have actively engaged in research and hands-on practice with various tools and services, building a solid foundation in both domains. My goal is to advance as a <strong>Cloud Security Engineer</strong> and <strong>Cybersecurity Analyst</strong>, leveraging technical expertise and problem-solving skills to safeguard systems and data. I am committed to continuous learning, hands-on projects, and collaboration, which enable me to grow while contributing to a safer digital environment. Beyond personal development, I am dedicated to sharing knowledge and supporting others in their journey, with the broader mission of fostering a more resilient and secure digital world.</p>
+
+    <p>
+      <a href="https://www.linkedin.com/in/ayomitope-olufemi/" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/AyomitopeOlufemi" target="_blank">GitHub</a> | 
+      <a href="https://drive.google.com/file/d/1s9kSe4Z_ItqT9jFYENCpjx22krnL_Tzm/view?usp=drive_link" target="_blank">CV</a>
+    </p>
+
+    <div class="certifications">
+      <!-- Left Column -->
+      <div>
+        <h2>📂 Projects</h2>
+        <ul>
+          <li>Deployed a secure PostgreSQL database on ECS with encryption and access controls for analytics data.</li>
+          <li>Configured an S3 bucket with SSE-KMS encryption, blocked public access, and enforced least-privilege policies.</li>
+          <li>Integrated CloudFront with S3 to enforce HTTPS, restrict direct bucket access, and improve content delivery.</li>
+          <li>Managed DNS records and custom domains to ensure secure and reliable routing.</li>
+          <li>Requested and validated a wildcard SSL certificate in ACM for encrypted communication across subdomains.</li>
+          <li>Built an event-driven pipeline with Lambda, CloudWatch, and SNS for real-time monitoring and security alerts.</li>
+          <li>Applied IAM best practices by enforcing least privilege and monitoring resources for compliance and anomalies.</li>
+        </ul>
+
+        <h2>☁️ Cloud Security Certifications</h2>
+        <ul>
+          <li>Introduction to Cloud Computing - IBM</li>
+          <li>AWS Cloud Practitioner Essentials (Certification of Completion)</li>
+          <li>AWS Cloud Bootcamp - CSN</li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+      <div>
+        <h2>🔐 Cybersecurity Certifications</h2>
+        <ul>
+          <li>Google Cybersecurity Specialization - Google</li>
+          <li>Networking Basics - Cisco</li>
+          <li>Mastercard - Cybersecurity Job Simulation - Forage</li>
+          <li>Introduction to Cybersecurity - Cisco</li>
+          <li>Datacom - Cybersecurity Job Simulation - Forage</li>
+          <li>JPMorgan Chase & Co. - Cybersecurity Job Simulation - Forage</li>
+          <li>Certified in Cybersecurity - ISC2</li>
+          <li>Cyber Threat Management - Cisco</li>
+          <li>CyBlack x CISCO Cybersecurity Academy - CyBlack</li>
+          <li>Clifford Chance - Cyber Security Job Simulation - Forage</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Ayomitope Olufemi. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
-
-
